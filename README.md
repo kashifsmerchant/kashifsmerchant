@@ -2,12 +2,12 @@
 
 **AI Product Leader — I build AI products that ship.**
 
-AI / GenAI Product Manager · taking products 0→1 and scaling them to tens of millions of users · Dallas, TX
+AI / GenAI Product Manager · taking AI products 0→1 in production — agents that finish real work · Dallas, TX
 
-[![Website](https://img.shields.io/badge/Website-kashifmerchant.com-C2613D?style=flat-square&logo=googlechrome&logoColor=white)](https://kashifmerchant.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kashifsmerchant-C2613D?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kashifsmerchant/)
-[![X](https://img.shields.io/badge/X-%40kashifmerchant__-C2613D?style=flat-square&logo=x&logoColor=white)](https://x.com/kashifmerchant_)
-[![Medium](https://img.shields.io/badge/Medium-%40kashifsmerchant-C2613D?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@kashifsmerchant)
+[![Website](https://img.shields.io/badge/Website-kashifmerchant.com-A14A2B?style=flat-square&logo=googlechrome&logoColor=white)](https://kashifmerchant.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kashifsmerchant-A14A2B?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kashifsmerchant/)
+[![X](https://img.shields.io/badge/X-%40kashifmerchant__-A14A2B?style=flat-square&logo=x&logoColor=white)](https://x.com/kashifmerchant_)
+[![Medium](https://img.shields.io/badge/Medium-%40kashifsmerchant-A14A2B?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@kashifsmerchant)
 
 I'm an AI product leader with 10+ years across fintech, telecom, healthcare, and enterprise SaaS. My work has evolved from traditional ML products to **conversational AI and multi-agent systems** that deliver proactive, personalized experiences at enterprise scale. I lead GenAI product strategy at WEX — and I build my own agents end to end. The repos below are mine.
 
@@ -32,12 +32,14 @@ Three working bets on how agentic AI products should be built — observable, ev
 | Product | What it is | Outcome |
 |---|---|---|
 | **Finn** (WEX) | Employee copilot — agents that finish real work across Workday approvals, Jira, expense, knowledge retrieval, and room booking | **$2M+** annual productivity; live 24×7 with human approval on sensitive actions |
-| **AssistIQ** (WEX) | Omni-channel personalized concierge (mobile, web, white-label, voice) | Tens of millions of customers; 500K+ employers & partners; **~30%** fewer routine calls |
+| **AssistIQ** (WEX) | Omni-channel personalized concierge (mobile, web, white-label, voice) | **~30%** fewer routine calls in targeted flows; 500K+ employers & partners on the platform |
 | **T-Mobile** | Self-install experience with AR + conversational AI product suite | **+25%** install-flow NPS; **−40%** install-related issues |
 | **EY** | AI-powered tax technology | **−35%** processing time |
 | **Hilti** | Connected tools / IoT platform | **−20%** tool-loss rate |
 
 15+ AI/ML products shipped to production · 5 industries · $B+ in transactions touched.
+
+▶ **[Run the live agent demo](https://kashifmerchant.com/demos/agent)** — a real tool-use loop with a human-approval gate and a policy-enforced refusal, in the browser. No sign-up.
 
 ---
 
