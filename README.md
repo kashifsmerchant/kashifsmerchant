@@ -6,6 +6,11 @@
   <a href="#current-project"><b>Current project</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#the-series"><b>The series</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#how-i-approach-the-work"><b>Approach</b></a>
 </p>
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/kashifsmerchant/"><img src="https://img.shields.io/badge/LinkedIn-kashifsmerchant-0A66C2?style=flat-square" alt="LinkedIn: kashifsmerchant"></a>
+  <a href="https://kashifmerchant.com/"><img src="https://img.shields.io/badge/Website-kashifmerchant.com-D95631?style=flat-square" alt="Website: kashifmerchant.com"></a>
+</p>
+
 <br>
 
 I build teams from the ground up and bring product, engineering, and operations together around real work. My focus is the judgment a useful agent needs:
