@@ -1,0 +1,9 @@
+{
+  "name": "policy-wind-tunnel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A public policy comparison and decision replay reference implementation by Kashif Merchant.",
+  "license": "MIT",
+  "scripts": { "test": "node --test tests/*.test.mjs", "check": "node --check dist/app.mjs" }
+}

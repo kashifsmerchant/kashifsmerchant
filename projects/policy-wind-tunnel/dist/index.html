@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17242a" />
+    <meta name="description" content="Explore how a policy change affects customer decisions. Compare implementations, inspect evidence, and replay a repair in a fictional workspace built by Kashif Merchant." />
+    <title>Policy Wind Tunnel · Kashif Merchant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%2317242a'/%3E%3Cpath d='M9 15h17a4 4 0 1 0-4-4M9 21h22M9 27h13a4 4 0 1 1-4 4' fill='none' stroke='%23ff815a' stroke-width='2.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to workspace</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Workspace navigation">
+        <a class="brand" href="./" aria-label="Policy Wind Tunnel home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 13h16a4 4 0 1 0-4-4M8 20h25M8 27h14a4 4 0 1 1-4 4" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" /></svg>
+          </span>
+          <span class="brand-name">Wind Tunnel<span>Agent systems lab</span></span>
+        </a>
+
+        <div class="sidebar-workspace">
+          <span class="workspace-monogram" aria-hidden="true">A</span>
+          <div><strong>Alder Supply</strong><span>Fictional workspace</span></div>
+        </div>
+
+        <p class="nav-label">Workspace</p>
+        <nav class="main-nav" aria-label="Product views">
+          <button class="nav-item active" type="button" data-view="review" aria-controls="review-view" aria-current="page">
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><rect x="3.5" y="3.5" width="13" height="13" rx="2" /><path d="M7 7h6M7 10h6M7 13h3" /></svg>
+            Review policy
+          </button>
+          <button class="nav-item" type="button" data-view="replay" aria-controls="replay-view">
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 7a6.5 6.5 0 1 1-.2 6M4 3.5V7h3.5M10 6.5v4l2.5 1.5" /></svg>
+            Decision replay
+          </button>
+          <a class="nav-item" href="about.html">
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="6.5" /><path d="M10 9v4M10 6.5v.1" /></svg>
+            About the project
+          </a>
+        </nav>
+
+        <div class="sidebar-note">
+          <span class="note-rule" aria-hidden="true"></span>
+          <p>A changed policy should come with a clear account of what changes.</p>
+          <span>See the cases. Inspect the evidence.</span>
+        </div>
+
+        <div class="sidebar-footer">
+          <a class="author-link" href="about.html"><span class="author-avatar" aria-hidden="true">KM</span><span>Built by<strong>Kashif Merchant</strong></span></a>
+          <a id="source-link" class="source-link" href="source.zip">Download source</a>
+        </div>
+      </aside>
+
+      <div class="workspace-shell">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>Alder Supply</span><span aria-hidden="true">/</span><strong>Policy laboratory</strong></div>
+          <span class="workspace-tag">Fictional workspace</span>
+        </header>
+
+        <main id="main-content" class="main-content">
+          <section class="page-heading" aria-labelledby="page-title">
+            <div>
+              <p class="eyebrow">Policy review &amp; decision replay</p>
+              <h1 id="page-title">Policy Wind Tunnel</h1>
+              <p class="page-subtitle">See what a policy change actually changes.</p>
+            </div>
+            <div class="heading-actions">
+              <button id="reset-button" class="button secondary" type="button">Reset workspace</button>
+              <button id="run-button" class="button primary" type="button">Run comparison</button>
+            </div>
+          </section>
+
+          <div id="status-message" class="status-message" role="status" aria-live="polite">Ready to compare a proposed policy with three reference implementations.</div>
+
+          <section id="review-view" class="view-panel" aria-label="Policy review">
+            <div class="scenario-bar">
+              <label class="scenario-field" for="scenario-select"><span>Explore a scenario</span><select id="scenario-select"><option value="returns">Return window extension</option><option value="partial">Partial returns</option><option value="threshold">Approval threshold</option></select></label>
+              <div class="scenario-actions">
+                <input id="import-file" type="file" accept=".json,.csv,application/json,text/csv" aria-label="Import case data" hidden />
+                <button id="import-button" class="button ghost" type="button"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M6 3.5h5l4 4v9H5v-13h1ZM11 3.5v4h4M8 11h4M8 14h4" /></svg>Import cases</button>
+                <button id="export-button" class="button ghost" type="button"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M5 3.5h7l3 3v10H5v-13ZM8 3.5v5h4v-5M8 16.5v-5h4v5" /></svg>Export review</button>
+              </div>
+            </div>
+
+            <div class="configuration-grid">
+              <section class="card policy-card" aria-labelledby="policy-heading">
+                <div class="card-heading">
+                  <div><p class="section-kicker">The intended change</p><h2 id="policy-heading">Proposed policy</h2></div>
+                  <span class="badge neutral">Version 2.0</span>
+                </div>
+                <div class="policy-fields">
+                  <label class="field" for="policy-days"><span>Return window</span><span class="input-with-suffix"><input id="policy-days" type="number" min="0" max="365" step="1" value="45" required /><span>days</span></span></label>
+                  <label class="field" for="policy-date"><span>Applies to purchases from</span><input id="policy-date" type="date" value="2026-11-01" required /></label>
+                  <label class="field" for="policy-threshold"><span>Automatic approval limit</span><span class="input-with-prefix"><span>$</span><input id="policy-threshold" type="number" min="0" max="1000000" step="1" value="150" required /></span></label>
+                  <div class="policy-options">
+                    <label class="checkbox-field" for="policy-partial"><input id="policy-partial" type="checkbox" checked /><span>Allow partial returns</span></label>
+                    <label class="checkbox-field" for="policy-receipt"><input id="policy-receipt" type="checkbox" checked /><span>Require a receipt</span></label>
+                  </div>
+                </div>
+                <div class="policy-footnote"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="6.5" /><path d="M10 9v4M10 6.5v.1" /></svg><p id="policy-summary">Earlier purchases retain the previous policy. Dates and exceptions matter.</p></div>
+              </section>
+
+              <section class="card implementation-card" aria-labelledby="implementations-heading">
+                <div class="card-heading">
+                  <div><p class="section-kicker">Where policy becomes behavior</p><h2 id="implementations-heading">Three implementations</h2></div>
+                  <span class="subtle-label">Compare each</span>
+                </div>
+                <div id="implementation-controls" class="implementation-controls"><p class="muted">Loading reference implementations.</p></div>
+                <div class="repair-actions">
+                  <button id="naive-fix-button" class="button secondary" type="button">Try latest policy everywhere</button>
+                  <button id="fix-all-button" class="button primary soft" type="button">Apply correct policy</button>
+                </div>
+                <p class="implementation-caption">Reference implementations. No live customer systems.</p>
+              </section>
+            </div>
+
+            <section id="metrics" class="metrics-grid" aria-label="Comparison summary"><div class="stat-card empty-stat"><span>Comparison summary</span><strong>Ready</strong><p>Run the cases to see the impact.</p></div></section>
+
+            <div class="results-layout">
+              <section class="card results-card" aria-labelledby="results-heading">
+                <div class="results-header"><div><p class="section-kicker">Every result has a reason</p><h2 id="results-heading">Decision comparison <span id="result-count" class="count-pill">0</span></h2></div><span class="table-help">Select a case to inspect</span></div>
+                <div class="table-toolbar">
+                  <label class="search-field" for="case-search"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><circle cx="8.5" cy="8.5" r="5" /><path d="m12.5 12.5 4 4" /></svg><input id="case-search" type="search" placeholder="Search cases or customers" autocomplete="off" /><span class="visually-hidden">Search cases or customers</span></label>
+                  <label class="filter-field" for="filter-select"><span class="visually-hidden">Filter cases</span><select id="filter-select"><option value="all">All cases</option><option value="mismatch">Disagreements</option><option value="changed">Policy changes</option><option value="unknown">Missing evidence</option></select></label>
+                </div>
+                <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable decision comparison">
+                  <table class="comparison-table">
+                    <thead><tr><th scope="col">Case</th><th scope="col">Expected</th><th scope="col">Support agent</th><th scope="col">Refund API</th><th scope="col">Reviewer SOP</th><th scope="col">Impact</th></tr></thead>
+                    <tbody id="results-body"><tr><td colspan="6"><div class="empty-state"><strong>Your comparison starts here</strong><p>Run the reference cases, then inspect a decision to see the evidence behind it.</p></div></td></tr></tbody>
+                  </table>
+                </div>
+                <div class="table-legend"><span><span class="legend-box mismatch-box" aria-hidden="true"></span>Disagrees with intended policy</span><span>Outcomes are calculated from case facts.</span></div>
+              </section>
+
+              <aside id="detail-panel" class="card detail-panel" aria-label="Selected case evidence">
+                <div class="empty-state detail-empty"><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="8" y="5" width="17" height="23" rx="2" /><path d="M12 11h9M12 16h9M12 21h5M5 9v16" /></svg></span><p class="section-kicker">Inspect the decision</p><h3>Follow the evidence.</h3><p>Select any case to see its facts, the applicable policy, and each implementation's reasoning.</p></div>
+              </aside>
+            </div>
+          </section>
+
+          <section id="replay-view" class="view-panel" hidden aria-label="Decision replay">
+            <section id="replay-section" class="card replay-card" aria-labelledby="replay-heading">
+              <div class="card-heading"><div><p class="section-kicker">A controlled counterfactual</p><h2 id="replay-heading">Decision replay</h2><p class="muted">Change an implementation. Keep the case facts fixed. Inspect what changes.</p></div><span class="badge neutral">Sandbox only</span></div>
+              <div class="replay-controls">
+                <label class="field" for="replay-case"><span>Case to inspect</span><select id="replay-case"><option value="">Run a comparison first</option></select></label>
+                <label class="field" for="replay-system"><span>Implementation</span><select id="replay-system"><option value="agent">Support agent</option><option value="api">Refund API</option><option value="sop">Reviewer SOP</option></select></label>
+                <button id="replay-button" class="button primary" type="button">Replay decision</button>
+              </div>
+              <div id="replay-output" class="replay-output"><div class="empty-state"><strong>A repair should explain itself.</strong><p>Choose a case and implementation to compare its current decision with the correctly applied policy.</p></div></div>
+            </section>
+            <section class="card history-card" aria-labelledby="history-heading"><div class="card-heading"><div><p class="section-kicker">Your session</p><h2 id="history-heading">Review history</h2></div><button id="clear-history-button" class="button ghost" type="button">Clear history</button></div><div id="history-list" class="history-list"><div class="empty-state"><p>Comparisons and replays from this session will appear here.</p></div></div></section>
+          </section>
+
+          <footer class="workspace-footer"><p>Built to make decisions inspectable.</p><div><span>Fictional cases. Real comparisons.</span><a href="about.html">How this works</a></div></footer>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>
