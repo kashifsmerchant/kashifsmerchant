@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="Compare">
+  <rect x="0.5" y="0.5" width="47" height="47" rx="12" fill="#17242a" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g fill="none" stroke="#f27a56" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 24h8"/>
+    <path d="M19 24c4 0 4-9 8-9h4"/>
+    <path d="M19 24h12"/>
+    <path d="M19 24c4 0 4 9 8 9h4"/>
+  </g>
+  <circle cx="35" cy="15" r="2.8" fill="#7fd8ab"/>
+  <circle cx="35" cy="24" r="2.8" fill="#7fd8ab"/>
+  <circle cx="35" cy="33" r="2.8" fill="#ffa29f"/>
+</svg>

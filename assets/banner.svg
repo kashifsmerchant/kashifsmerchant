@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="t d">
+  <title id="t">Kashif Merchant</title>
+  <desc id="d">Product leader building agentic applications, platforms, and teams. Decisions you can inspect. Changes you can test. Outcomes you can verify.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17242a"/>
+      <stop offset="1" stop-color="#0f1b21"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#d95631" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#d95631" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="380" rx="22"/></clipPath>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .flow { fill: none; stroke: #f27a56; stroke-linecap: round; stroke-width: 1.6; stroke-dasharray: 22 46; animation: wind 7s linear infinite; }
+      .flow.a { stroke-opacity: .2; }
+      .flow.b { stroke-opacity: .12; animation-duration: 9s; }
+      .scan { animation: scan 9s ease-in-out infinite; }
+      .flag { animation: pulse 3s ease-in-out infinite; }
+      @keyframes wind { to { stroke-dashoffset: -272; } }
+      @keyframes scan {
+        0%, 6% { transform: translateY(0); }
+        20%, 26% { transform: translateY(34px); }
+        40%, 46% { transform: translateY(68px); }
+        60%, 66% { transform: translateY(102px); }
+        80%, 86% { transform: translateY(136px); }
+        100% { transform: translateY(0); }
+      }
+      @keyframes pulse { 0%, 100% { stroke-opacity: .95; } 50% { stroke-opacity: .35; } }
+      @media (prefers-reduced-motion: reduce) { .flow, .scan, .flag { animation: none; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1280" height="380" fill="url(#bg)"/>
+    <rect width="1280" height="380" fill="url(#grid)"/>
+    <rect width="1280" height="380" fill="url(#glow)"/>
+    <path class="flow a" d="M-20 338 C 240 338, 420 324, 640 330 S 1040 356, 1300 344"/>
+    <path class="flow b" d="M-20 360 C 260 356, 480 368, 700 362 S 1060 350, 1300 368"/>
+    <path class="flow b" d="M-20 22 C 300 28, 520 12, 760 18 S 1080 32, 1300 20"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="379" rx="21.5" fill="none" stroke="#ffffff" stroke-opacity="0.07"/>
+
+  <g transform="translate(72 74)" fill="none" stroke="#f27a56" stroke-width="3.4" stroke-linecap="round">
+    <path d="M0 4h24"/><path d="M0 13.5h16"/><path d="M0 23h24"/>
+  </g>
+  <text x="110" y="94" class="mono" font-size="14" letter-spacing="2.6" fill="#f27a56">INDEPENDENT PROJECT SERIES</text>
+
+  <text x="69" y="170" class="sans" font-size="66" font-weight="700" letter-spacing="-2" fill="#f3f6f7">Kashif Merchant</text>
+  <text x="72" y="212" class="sans" font-size="21.5" fill="#a7b4ba">Product leader building agentic applications,</text>
+  <text x="72" y="241" class="sans" font-size="21.5" fill="#a7b4ba">platforms, and teams.</text>
+
+  <g class="sans" font-size="18" fill="#dfe6e9">
+    <rect x="72" y="273" width="15" height="3.2" rx="1.6" fill="#f27a56"/><text x="98" y="280">Decisions you can inspect.</text>
+    <rect x="72" y="301" width="15" height="3.2" rx="1.6" fill="#f27a56"/><text x="98" y="308">Changes you can test.</text>
+    <rect x="72" y="329" width="15" height="3.2" rx="1.6" fill="#f27a56"/><text x="98" y="336">Outcomes you can verify.</text>
+  </g>
+
+  <g transform="translate(774 50)">
+    <rect width="442" height="272" rx="14" fill="#0c171c" fill-opacity="0.72" stroke="#ffffff" stroke-opacity="0.09"/>
+    <text x="24" y="33" class="mono" font-size="13" fill="#a7b4ba">policy-change-review</text>
+    <text x="418" y="33" class="mono" font-size="13" fill="#6f8089" text-anchor="end">v1.0 → v2.0</text>
+    <path d="M0 50H442" stroke="#ffffff" stroke-opacity="0.08"/>
+    <g class="mono" font-size="11" letter-spacing="1.4" fill="#6f8089" text-anchor="middle">
+      <text x="24" y="76" text-anchor="start">CASE</text>
+      <text x="140" y="76">EXPECTED</text>
+      <text x="222" y="76">AGENT</text>
+      <text x="304" y="76">API</text>
+      <text x="386" y="76">SOP</text>
+    </g>
+    <rect class="scan" x="10" y="85" width="422" height="36" rx="8" fill="#f27a56" fill-opacity="0.07"/>
+    <g class="mono" font-size="12.5" fill="#83969f">
+      <text x="24" y="107.5">RET-01</text>
+      <text x="24" y="141.5">RET-02</text>
+      <text x="24" y="175.5">RET-03</text>
+      <text x="24" y="209.5">RET-04</text>
+      <text x="24" y="243.5">RET-05</text>
+    </g>
+    <g class="sans" font-size="13.5" font-weight="600" text-anchor="middle">
+      <rect x="104" y="90" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="140" y="107.6" fill="#7fd8ab">Approve</text>
+      <rect x="186" y="90" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="222" y="107.6" fill="#7fd8ab">Approve</text>
+      <rect x="268" y="90" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="304" y="107.6" fill="#ffa29f">Deny</text>
+      <rect x="350" y="90" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="386" y="107.6" fill="#ffa29f">Deny</text>
+      <rect class="flag" x="264" y="86" width="162" height="34" rx="9" fill="none" stroke="#f27a56" stroke-width="1.6"/>
+      <rect x="104" y="124" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="140" y="141.6" fill="#ffa29f">Deny</text>
+      <rect x="186" y="124" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="222" y="141.6" fill="#7fd8ab">Approve</text>
+      <rect x="268" y="124" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="304" y="141.6" fill="#ffa29f">Deny</text>
+      <rect x="350" y="124" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="386" y="141.6" fill="#ffa29f">Deny</text>
+      <rect class="flag" x="182" y="120" width="80" height="34" rx="9" fill="none" stroke="#f27a56" stroke-width="1.6"/>
+      <rect x="104" y="158" width="72" height="26" rx="7" fill="#a7b4ba" fill-opacity="0.15"/><text x="140" y="175.6" fill="#bcc7cc">Unknown</text>
+      <rect x="186" y="158" width="72" height="26" rx="7" fill="#a7b4ba" fill-opacity="0.15"/><text x="222" y="175.6" fill="#bcc7cc">Unknown</text>
+      <rect x="268" y="158" width="72" height="26" rx="7" fill="#a7b4ba" fill-opacity="0.15"/><text x="304" y="175.6" fill="#bcc7cc">Unknown</text>
+      <rect x="350" y="158" width="72" height="26" rx="7" fill="#a7b4ba" fill-opacity="0.15"/><text x="386" y="175.6" fill="#bcc7cc">Unknown</text>
+      <rect x="104" y="192" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="140" y="209.6" fill="#7fd8ab">Approve</text>
+      <rect x="186" y="192" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="222" y="209.6" fill="#7fd8ab">Approve</text>
+      <rect x="268" y="192" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="304" y="209.6" fill="#7fd8ab">Approve</text>
+      <rect x="350" y="192" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="386" y="209.6" fill="#7fd8ab">Approve</text>
+      <rect x="104" y="226" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="140" y="243.6" fill="#ffa29f">Deny</text>
+      <rect x="186" y="226" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="222" y="243.6" fill="#ffa29f">Deny</text>
+      <rect x="268" y="226" width="72" height="26" rx="7" fill="#b13e3c" fill-opacity="0.32"/><text x="304" y="243.6" fill="#ffa29f">Deny</text>
+      <rect x="350" y="226" width="72" height="26" rx="7" fill="#20704f" fill-opacity="0.3"/><text x="386" y="243.6" fill="#7fd8ab">Approve</text>
+      <rect class="flag" x="346" y="222" width="80" height="34" rx="9" fill="none" stroke="#f27a56" stroke-width="1.6"/>
+    </g>
+  </g>
+  <g transform="translate(796 352)">
+    <rect x="0" y="-10.5" width="12" height="12" rx="3.5" fill="none" stroke="#f27a56" stroke-width="1.6"/>
+    <text x="22" y="0" class="mono" font-size="12.5" fill="#83969f">Disagrees with the expected outcome</text>
+  </g>
+</svg>
