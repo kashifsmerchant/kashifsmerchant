@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152b30">
+  <meta name="description" content="Inspect the evidence behind a promised invoice correction and test a repair in a fictional service workspace. An independent project by Kashif Merchant.">
+  <title>Promise-to-Proof | Kashif Merchant</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23152b30'/%3E%3Cpath d='M11 13h18v18H11zM19 21h18v18H19z' fill='none' stroke='%23f39b73' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to workspace</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" aria-label="Promise-to-Proof home" href="./"><span class="brand-mark" aria-hidden="true"></span>Promise-to-Proof</a>
+      <nav aria-label="Project navigation">
+        <span class="environment"><span aria-hidden="true"></span> Fictional workspace</span>
+        <a class="portfolio" href="https://policy-wind-tunnel-kashif.ksm5351.chatgpt.site/about">Project portfolio <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="workspace" class="shell" tabindex="-1">
+    <div class="intro">
+      <div>
+        <p class="eyebrow"><span class="short-rule" aria-hidden="true"></span>Service operations</p>
+        <h1>Commitment review</h1>
+        <p class="intro-copy">Follow each promised invoice correction from the case note to the customer’s delivery receipt.</p>
+      </div>
+      <div class="toolbar">
+        <button type="button" id="reset" class="btn"><span aria-hidden="true">↺</span> Reset demo</button>
+        <button type="button" id="export" class="btn dark"><span aria-hidden="true">↓</span> Export review</button>
+      </div>
+    </div>
+    <section id="metrics" class="metrics" aria-label="Filter commitments by verification status"></section>
+    <div class="workbench">
+      <aside class="inbox panel" aria-labelledby="inbox-title">
+        <div class="inbox-head">
+          <h2 id="inbox-title">Commitments</h2>
+          <div class="search"><span class="search-icon" aria-hidden="true"></span><label class="sr" for="search">Find a customer, case, or invoice</label><input type="search" id="search" placeholder="Find customer, case, or invoice"></div>
+          <div id="list-count" class="list-count" aria-live="polite"></div>
+        </div>
+        <ul id="inbox-list" class="inbox-list"></ul>
+      </aside>
+      <section class="detail panel" id="detail" aria-label="Selected commitment" tabindex="-1"></section>
+    </div>
+    <footer><span>Independent project by Kashif Merchant</span><span id="as-of"></span></footer>
+  </main>
+  <div id="announcement" role="status" class="sr" aria-live="polite"></div>
+  <noscript><p class="noscript">Enable JavaScript to open the interactive evidence workspace.</p></noscript>
+</body>
+</html>
